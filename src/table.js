@@ -6,6 +6,7 @@ const TableHeader = () => {
             <tr>
                 <th>Nome</th>
                 <th>Turma</th>
+                <th>Horário</th>
             </tr>
         </thead>
     );
@@ -17,6 +18,7 @@ const TableBody = (props) => {
             <tr key={index}>
                 <td>{row.nome}</td>
                 <td>{row.turma}</td>
+                <td>{row.horario}</td>
                 <td>
                     <button onClick={() => props.removerAluno(index)}>
                         Apagar

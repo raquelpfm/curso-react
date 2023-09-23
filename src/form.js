@@ -4,6 +4,7 @@ class Form extends Component {
     initialState = {
         nome: "",
         turma: "",
+        horario: "",
     }
 
     state = this.initialState
@@ -22,7 +23,7 @@ class Form extends Component {
 
 
     render() {
-        const{nome, turma} = this.state;
+        const{nome, turma, horario} = this.state;
         return(
             <form>
                 <label htmlFor="nome">Nome</label>
@@ -39,6 +40,14 @@ class Form extends Component {
                     name="turma"
                     id="turma"
                     value={turma}
+                    onChange={this.handleChange}
+                />
+                <label htmlFor="horario">Horário</label>
+                <input 
+                    type="text"
+                    name="horario"
+                    id="horario"
+                    value={horario}
                     onChange={this.handleChange}
                 />
                 <input

@@ -10,7 +10,7 @@ class App extends Component {
   removerAluno = (index) => {
     const{alunos} = this.state
     this.setState({
-      alunos: alunos.filter((aluni, i) => {
+      alunos: alunos.filter((aluno, i) => {
         return i !== index
       })
     })
